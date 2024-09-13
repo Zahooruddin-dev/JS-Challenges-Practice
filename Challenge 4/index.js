@@ -3,8 +3,9 @@ const addBtn = document.getElementById('add-btn')
 const filmList = document.getElementById('film-list')
 
 addBtn.addEventListener('click', function() {
-    filmList.innerHTML += `
-        <div class="film-item">${filmInput.value}</div>
-        `
-    filmInput.value = ''
-}) 
+  const template = document.createElement('div')
+  template.classList.add('film-item')
+  template.innerText=filmInput.value
+  filmList.appendChild(template)
+  filmInput.value = ''
+})  

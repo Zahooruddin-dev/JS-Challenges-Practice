@@ -33,7 +33,7 @@ for (let i = 0; i < expensesAndRefunds.length; i++) {
       console.log(`Skipping ${currentExpenseOrRefund.description} due to refund`)
       continue
   } 
-totalSpent += currentExpenseOrRefund.amount
+totalSpent += currentExpenseOrRefund.amount 
 }
 
 

@@ -34,6 +34,6 @@ const playlistHtml = playlistArr.map((track) => {
             <p class="card-menu">...</p>
         </div>
     </section>`;
-}).join(' '); // This ensures that the array of HTML is joined into a single string
+}).join(''); // This ensures that the array of HTML is joined into a single string
 
 document.getElementById('container').innerHTML = playlistHtml;

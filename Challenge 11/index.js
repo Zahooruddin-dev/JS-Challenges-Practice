@@ -11,11 +11,13 @@ Challenge:
 3. Find the lowest number from the array 
    and store it in the const 'lowest'. 
 */
-    const highest = 0
-    const lowest = 0
+    
+
+    const highest = Math.max(...arr)
+    const lowest = Math.min(...arr)
     console.log(`The highest average share price was ${highest}`)
     console.log(`The lowest average share price was ${lowest}`)
-    console.log(arr);
+    
     
 }
 

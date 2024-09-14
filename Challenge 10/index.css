@@ -1,51 +1,25 @@
 html, body {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #f3f3f3;
+  padding: 0;
+  font-family: 'Poppins';
 }
 
-.film-list-app {
-  padding: 16px;
+.labels-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.film-list {
-  width: 50%;
-  margin-bottom: 2rem;
-  text-align: left;
-}
-
-.film-item {
-  border-bottom: 1px solid #ddd;
-  padding: 1rem;
-  font-size: 1.2rem;
-}
-
-.input-container {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.input-container textarea {
-  height: 64px;
+  flex-wrap: wrap;
+  gap: 8px;
   padding: 8px;
 }
 
-.input-container button {
-  margin-top: 8px;
-  padding: 16px;
+p {
+  margin: 8px;
+  font-size: 20px;
 }
 
-.input-container button, .input-container textarea {
-  border: 2px solid #999;;
-  border-radius: 10px;
+.label-card {
+  border-radius: 5px;
+  width: 250px;
+  padding: 5px 10px;
+  color: white;
+  background-color: dodgerblue;
 }

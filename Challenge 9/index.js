@@ -18,5 +18,4 @@ function getPropertyHtml() {
 	
 return propertiesForSaleHtml
 }
-
 document.getElementById('container').innerHTML = getPropertyHtml();

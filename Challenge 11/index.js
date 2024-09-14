@@ -1,43 +1,27 @@
-function getLabelsHtml(text,sender, ...name) {
- let renderHtml =''
-  const names = Object.values(name)
-  const contentHtml = names.forEach(names => {
-    renderHtml+=	`<div class="label-card">
-       <p>Dear ${names.name} </p>
-       <p>${text}</p>
-       <p>Best wishes,</p>
-       <p>${sender}</p>
-   </div>`;   
-  });
+const averageSharePriceByMonthQ1 = [109.6, 103.3, 89.4]
+const averageSharePriceByMonthQ2 = [109.3, 126.1, 103.3]
+const averageSharePriceByMonthQ3 = [120.8, 102.3, 106.8]
+const averageSharePriceByMonthQ4 = [110.9, 119.8, 113.7]
 
-
-
-	
-	/*
-  Challenge:
-  1. Add parameters.
-  2. Update the HTML template where you 
-     see **NAME**.
-  3. Return HTML template for each label.
-  */
-
-	// `<div class="label-card">
-	//     <p>Dear **NAME** </p>
-	//     <p>${text}</p>
-	//     <p>Best wishes,</p>
-	//     <p>${sender}</p>
-	// </div>`
-  return renderHtml
+function findPriceExtremes(arr){
+/*
+Challenge:
+2. Find the highest number from the array 
+   and store it in the const 'highest'. 
+3. Find the lowest number from the array 
+   and store it in the const 'lowest'. 
+*/
+    const highest = 0
+    const lowest = 0
+    console.log(`The highest average share price was ${highest}`)
+    console.log(`The lowest average share price was ${lowest}`)
+    console.log(arr);
+    
 }
 
-const text = 'Thank you for all your hard work throughout the year! 🙏🎁';
-const sender = 'Tom';
-
-document.getElementById('labels-container').innerHTML = getLabelsHtml(
-	text,
-	sender,
-	{ name: 'Sally' },
-	{ name: 'Mike' },
-	{ name: 'Rob' },
-	{ name: 'Harriet' }
-);
+/*
+Challenge:
+1. Call this function with one array holding 
+   all of the data from the 4 arrays above.
+*/
+findPriceExtremes(year=[...averageSharePriceByMonthQ1,...averageSharePriceByMonthQ2,...averageSharePriceByMonthQ1,...averageSharePriceByMonthQ1])
